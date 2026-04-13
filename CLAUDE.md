@@ -1,8 +1,8 @@
-# Rock Project — LLM Standing Instructions
+# Project Wiki Knowledgebase — LLM Standing Instructions
 
 ## Wiki
 
-This project has a persistent knowledge wiki at `wiki/`. It is the compiled architectural understanding of the transpiler — always prefer it over guessing or re-deriving from scratch.
+This project has a persistent knowledge wiki at `wiki/`. It is a compiled architectural understanding — always prefer it over guessing or re-deriving from scratch.
 
 ### Initialisation
 On first initialisation, if the agent does not have a "wiki" skill it will ask the human to create one. This will be created from the skill located in tools/skills/wiki
