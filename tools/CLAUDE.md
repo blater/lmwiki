@@ -2,7 +2,10 @@
 
 ## Wiki
 
-This project has a persistent knowledge wiki at `wikiroot/`. It is the compiled architectural understanding of the transpiler — always prefer it over guessing or re-deriving from scratch.
+This project has a persistent knowledge wiki at `wiki/`. It is the compiled architectural understanding of the transpiler — always prefer it over guessing or re-deriving from scratch.
+
+### Initialisation
+On first initialisation, if the agent does not have a "wiki" skill it will ask the human to create one. This will be created from the skill located in tools/skills/wiki
 
 ### Session start
 At the start of every session, run the `/wiki` skill (no arguments). This displays the wiki README and reports any pending sources in `wikiroot/new/`.
@@ -14,7 +17,7 @@ Before reading source files, run the `/wiki query <topic>` skill first to orient
 Note which wiki pages are likely stale and mention this to the user. Do not silently let the wiki drift from the code.
 
 ### Ingest
-When the user drops a file in `wikiroot/new/` or asks you to process pending sources, run the `/wiki ingest` skill.
+When the user drops a file in `wiki/new/` or asks you to process pending sources, run the `/wiki ingest` skill.
 
 ### Lint
 When the user asks to health-check or audit the wiki, run the `/wiki lint` skill.
@@ -23,5 +26,5 @@ When the user asks to health-check or audit the wiki, run the `/wiki lint` skill
 
 ## Reference discipline 
 
-Use reference material from wikiroot/pages before guessing or inferring unfamiliar language syntax/semantics or technologies. 
+Use reference material from wiki/pages before guessing or inferring unfamiliar language syntax/semantics or technologies. 
 If reference material is insufficient, ask for more, specifying the topic and what you are trying to solve.
