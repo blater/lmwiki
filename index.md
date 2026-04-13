@@ -1,4 +1,4 @@
-# Rock Wiki — Content Index
+# Wiki — Content Index
 
 Organised by category. Each entry: `page-name — one-line description`.
 
